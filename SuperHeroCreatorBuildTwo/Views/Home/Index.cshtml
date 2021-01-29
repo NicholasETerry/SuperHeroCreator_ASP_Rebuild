@@ -2,15 +2,40 @@
 @{
     ViewData["Title"] = "Home Page";
 }
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+        }
 
+            .card:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
 
+        .container {
+            padding: 2px 16px;
+        }
+    </style>
+</head>
+<body>
     @foreach (var item in Model)
-    {   
-    
-            <hr />
+    {
+
+        @*<hr />
             <h1 class="red-class">@item.Name @item.AlterEgo @item.PrimaryAbility</h1>
             <img src="@item.HeroImage" />
-            <hr />
+            <hr />*@
+        <div class="card">
+            <img src="@item.HeroImage" alt="Avatar" style="width:100%">
+            <div class="container">
+                <h4><b>@item.AlterEgo</b></h4>
+                <h5>@item.Name</h5>
+                <p>@item.PrimaryAbility : @item.SecondaryAbility</p>
+            </div>
+        </div>
 
-    
     }
+</body>
