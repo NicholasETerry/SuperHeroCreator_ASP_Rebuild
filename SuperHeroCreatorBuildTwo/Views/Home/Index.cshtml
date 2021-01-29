@@ -1,0 +1,16 @@
+﻿@model List<SuperHero>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+    @foreach (var item in Model)
+    {   
+    
+            <hr />
+            <h1 class="red-class">@item.Name @item.AlterEgo @item.PrimaryAbility</h1>
+            <img src="@item.HeroImage" />
+            <hr />
+
+    
+    }
