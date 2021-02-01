@@ -20,37 +20,6 @@ namespace SuperHeroCreatorBuildTwo.Controllers
         public IActionResult Index()
         {
             List<SuperHero> SuperHeros = _context.SuperHeros.ToList();
-            SuperHero BigBertha = new SuperHero();
-            BigBertha.Name ="";
-            BigBertha.AlterEgo ="";
-            BigBertha.PrimaryAbility = "";
-            BigBertha.SecondaryAbility = "";
-            BigBertha.HeroImage = "";
-            SuperHero Doorman = new SuperHero();
-            Doorman.Name = "";
-            Doorman.AlterEgo = "";
-            Doorman.PrimaryAbility = "";
-            Doorman.SecondaryAbility = "";
-            Doorman.HeroImage = "";
-            SuperHero Flatman = new SuperHero();
-            Flatman.Name = "";
-            Flatman.AlterEgo = "";
-            Flatman.PrimaryAbility = "";
-            Flatman.SecondaryAbility = "";
-            Flatman.HeroImage = "";
-            SuperHero GoodBoy = new SuperHero();
-            GoodBoy.Name = "";
-            GoodBoy.AlterEgo = "";
-            GoodBoy.PrimaryAbility = "";
-            GoodBoy.SecondaryAbility = "";
-            GoodBoy.HeroImage = "";
-            SuperHero MrImmortal = new SuperHero();
-            MrImmortal.Name = "";
-            MrImmortal.AlterEgo = "";
-            MrImmortal.PrimaryAbility = "";
-            MrImmortal.SecondaryAbility = "";
-            MrImmortal.HeroImage = "";
-
 
             return View(SuperHeros);
         }
@@ -58,13 +27,15 @@ namespace SuperHeroCreatorBuildTwo.Controllers
         // GET: Hero/Details/5
         public IActionResult Details(int id)
         {
-            return View();
+            SuperHero details = _context.SuperHeros.Where(hero => hero.Id == id).SingleOrDefault();
+            return View(details);
         }
 
         // GET: Hero/Create
         public IActionResult Create()
         {
-            return View();
+            SuperHero superHero = new SuperHero();
+            return View(superHero);
         }
 
         // POST: Hero/Create
@@ -74,16 +45,17 @@ namespace SuperHeroCreatorBuildTwo.Controllers
 
                 _context.SuperHeros.Add(superhero);
                 _context.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction(nameof(Index));
 
 
         }
 
         // GET: Hero/Edit/5
+        [HttpGet]
         public IActionResult Edit(int id)
         {
-            SuperHero edit = _context.SuperHeros.Where(hero => hero.Id == id).FirstOrDefault();  // creating the modified version of the superhero
-            return View();
+            SuperHero edit = _context.SuperHeros.Where(hero => hero.Id == id).SingleOrDefault();  // creating the modified version of the superhero
+            return View(edit);
         }
 
         // POST: Hero/Edit/5
@@ -98,8 +70,8 @@ namespace SuperHeroCreatorBuildTwo.Controllers
         // GET: Hero/Delete/5
         public IActionResult Delete(int id)
         {
-            SuperHero delete = _context.SuperHeros.Where(hero => hero.Id == id).FirstOrDefault();
-            return View();
+            SuperHero delete = _context.SuperHeros.Where(hero => hero.Id == id).SingleOrDefault();
+            return View(delete);
         }
 
         // POST: Hero/Delete/5
@@ -110,5 +82,6 @@ namespace SuperHeroCreatorBuildTwo.Controllers
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

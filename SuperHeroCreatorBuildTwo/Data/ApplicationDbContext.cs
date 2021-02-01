@@ -15,5 +15,6 @@ namespace SuperHeroCreatorBuildTwo.Data
         }
 
         public DbSet<SuperHero> SuperHeros { get; set; }
+
     }
 }

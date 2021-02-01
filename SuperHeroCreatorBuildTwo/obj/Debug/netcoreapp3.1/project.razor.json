@@ -14392,23 +14392,18 @@
   "RootNamespace": "SuperHeroCreatorBuildTwo",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\SuperHeroView\\Edit.cshtml",
-      "TargetPath": "Views\\SuperHeroView\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\Shared\\_LoginPartial.cshtml",
       "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\SuperHeroView\\Details.cshtml",
-      "TargetPath": "Views\\SuperHeroView\\Details.cshtml",
+      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\Hero\\Create.cshtml",
+      "TargetPath": "Views\\Hero\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\SuperHeroView\\Delete.cshtml",
-      "TargetPath": "Views\\SuperHeroView\\Delete.cshtml",
+      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\Hero\\Edit.cshtml",
+      "TargetPath": "Views\\Hero\\Edit.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14427,13 +14422,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\Hero\\Details.cshtml",
+      "TargetPath": "Views\\Hero\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\SuperHeroView\\Create.cshtml",
-      "TargetPath": "Views\\SuperHeroView\\Create.cshtml",
+      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\Hero\\Delete.cshtml",
+      "TargetPath": "Views\\Hero\\Delete.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14449,11 +14449,6 @@
     {
       "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Nicholas\\Desktop\\DevCode\\Thulium\\SuperHeroCreatorBuildTwo\\SuperHeroCreatorBuildTwo\\Views\\SuperHeroView\\Index.cshtml",
-      "TargetPath": "Views\\SuperHeroView\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
