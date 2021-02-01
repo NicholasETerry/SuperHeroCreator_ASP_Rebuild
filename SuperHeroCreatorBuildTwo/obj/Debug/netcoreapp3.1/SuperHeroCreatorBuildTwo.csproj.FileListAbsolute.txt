@@ -167,4 +167,5 @@ C:\Users\Nicholas\Desktop\DevCode\Thulium\SuperHeroCreatorBuildTwo\SuperHeroCrea
 C:\Users\Nicholas\Desktop\DevCode\Thulium\SuperHeroCreatorBuildTwo\SuperHeroCreatorBuildTwo\obj\Debug\netcoreapp3.1\Razor\Views\Hero\Delete.cshtml.g.cs
 C:\Users\Nicholas\Desktop\DevCode\Thulium\SuperHeroCreatorBuildTwo\SuperHeroCreatorBuildTwo\obj\Debug\netcoreapp3.1\Razor\Views\Hero\Details.cshtml.g.cs
 C:\Users\Nicholas\Desktop\DevCode\Thulium\SuperHeroCreatorBuildTwo\SuperHeroCreatorBuildTwo\obj\Debug\netcoreapp3.1\Razor\Views\Hero\Edit.cshtml.g.cs
-C:\Users\Nicholas\Desktop\DevCode\Thulium\SuperHeroCreatorBuildTwo\SuperHeroCreatorBuildTwo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index.cshtml.g.cs
+C:\Users\Nicholas\Desktop\DevCode\Thulium\SuperHeroCreatorBuildTwo\SuperHeroCreatorBuildTwo\obj\Debug\netcoreapp3.1\Razor\Views\Hero\Index.cshtml.g.cs
+C:\Users\Nicholas\Desktop\DevCode\Thulium\SuperHeroCreatorBuildTwo\SuperHeroCreatorBuildTwo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs

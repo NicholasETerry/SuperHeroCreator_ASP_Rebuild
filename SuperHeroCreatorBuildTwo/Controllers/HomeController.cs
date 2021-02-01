@@ -35,7 +35,7 @@ namespace SuperHeroCreatorBuildTwo.Controllers
         private static void PopulateHeros(ApplicationDbContext context)
         {
             List<SuperHero> CheckHero = context.SuperHeros.ToList();
-            List<string> checkForId = CheckHero.Select(h => h.Name).ToList();
+            List<string> checkForId = CheckHero.Select(h => h.AlterEgo).ToList();
             foreach (var item in checkForId)
             {
                 if (checkForId.Contains("Big Bertha") || checkForId.Contains("DoorMan") || checkForId.Contains("FlatMan") || checkForId.Contains("GoodBoy") || checkForId.Contains("Mr. Immortal"))

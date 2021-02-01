@@ -1,0 +1,69 @@
+﻿@model List<SuperHero>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    .custom_sized {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+    }
+</style>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap-slate.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body class="grey-background">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img class="custom_sized"src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/Spawn_Classic.jpg/215px-Spawn_Classic.jpg" >
+            </div>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col"> SuperHero Name</th>
+                <th scope="col"> Real Name</th>
+                <th scope="col"> Primary Ability</th>
+                <th scope="col"> Secondary Ability</th>
+                <th scope="col"> Catch Phrase</th>
+                <th scope="col"> </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr class=" table-active">
+                    <td>
+                        @item.AlterEgo
+                    </td>
+                    <td>
+                        @item.Name
+                    </td>
+                    <td>
+                        @item.PrimaryAbility
+                    </td>
+                    <td>
+                        @item.SecondaryAbility
+                    </td>
+                    <td>
+                        @item.CatchPhrase
+                    </td>
+                    <td>
+                        <a asp-controller="Hero" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-controller="Hero" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-controller="Hero" asp-action="Delete" asp-route-id="@item.Id">Delete</a> |
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
